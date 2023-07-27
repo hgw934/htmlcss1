@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        font-family: Arial, "나눔 고딕", sans-serif;
+      }
+
+      .topmenu {
+        position: relative;
+        font-size: 16px;
+      }
+      .topmenu .topleft {
+        width: 925px;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .topmenu .topright {
+        position: absolute;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+      .topmenu ul li a {
+        color: #6f574d;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="top">
+        <div class="topmenu">
+          <div class="topleft">
+            <a href="https://www.happybath.com/kr/ko/index.html"
+              ><img src="images/logo.png" alt="happybath"
+            /></a>
+          </div>
+          <ul class="topright">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">구매하기</a></li>
+            <li><a href="#">매장찾기</a></li>
+            <li>
+              <img src="images/search_FILL0_wght400_GRAD0_opsz48.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

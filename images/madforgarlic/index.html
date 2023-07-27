@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        font-family: Arial, "맑은 고딕", sans-serif;
+      }
+      #wrap {
+      }
+      .top {
+        background-color: gray;
+      }
+      .info {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      .info ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .info ul li {
+        margin-left: 10px;
+      }
+      .info ul li a {
+        color: white;
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="top">
+        <div class="info">
+          <ul>
+            <li><a href="#">LOG IN</a></li>
+            <li><a href="#">JOIN</a></li>
+            <li><a href="#">CUST</a></li>
+            <li>
+              <p>
+                <input
+                  type="text"
+                  placeholder="검색어를 입력해주세요"
+                  size="20"
+                  maxlength="10"
+                  minlength="5"
+                  onfocus="this.placeholder=''"
+                  required
+                />
+              </p>
+            </li>
+            <li><img src="images/zoom.png" alt="zoom" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      p {
+        position: relative;
+        left: 0;
+        transition: 0.5s;
+      }
       .menu01 {
         left: 500px;
-        transition: 0.5s;
       }
       p span {
         display: block;
@@ -35,7 +39,6 @@
         top: 0;
         background: rgba(0, 0, 0, 0.5);
         transition: left 0.5s ease-in-out;
-        z-index: -1;
       }
       .box {
         left: 0;
@@ -49,5 +52,14 @@
       <span id="three"></span>
     </p>
     <div id="side"></div>
+    <script>
+      document.getElementById("menu").onclick = function () {
+        this.classList.toggle("menu01");
+        document.getElementById("one").classList.toggle("bar1");
+        document.getElementById("two").classList.toggle("bar2");
+        document.getElementById("three").classList.toggle("bar3");
+        document.getElementById("side").classList.toggle("box");
+      };
+    </script>
   </body>
 </html>

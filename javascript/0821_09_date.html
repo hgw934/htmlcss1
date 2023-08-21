@@ -29,7 +29,9 @@
       document.write(x.getMilliseconds() + "<br>");
       document.write(x.getTime() + "<br>");
       let m = x.getMinutes() < 10 ? "0" + x.getMinutes() : x.getMinutes();
-      document.write("시간 : " + x.getHours() + ":" + m + ":" + x.getSeconds());
+      document.write(
+        "시간 : " + x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds()
+      );
     </script>
   </body>
 </html>

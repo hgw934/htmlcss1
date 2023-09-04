@@ -21,7 +21,7 @@
         $(".lnb>ul>li").hover(
           function () {
             let i = $(this).index();
-            $(".gnb ul li ").eq(i).find("a").addClass("on");
+            $(".gnb ul li").eq(i).find("a").addClass("on");
             $(this).stop().slideDown();
           },
           function () {

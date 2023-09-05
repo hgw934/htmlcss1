@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="js/jquery-3.7.1.min.js"></script>
+
     <style>
       * {
         margin: 0;
@@ -354,20 +355,19 @@
     <script>
       $(function () {
         $(".submenu").css({ display: "none" });
-        let status = true;
         $(".menu ul li").click(function (e) {
           e.preventDefault();
-          if (status) {
-            let i = $(this).index();
-            console.log(i);
-            $(".submenu").eq(i).siblings().css({ display: "none" });
-            $(".submenu").eq(i).stop().slideDown();
-            $(".menu ul li").eq(i).find("a").addClass("on");
-          } else {
+          let i = $(this).index();
+          // if ($(this).find("a").hasClass("on")) {
+          if ($(".submenu").eq(i).css("display") == "block") {
             $(".submenu").stop().slideUp();
             $(".menu ul li a").removeClass("on");
+          } else {
+            $(".submenu").eq(i).siblings().css({ display: "none" });
+            $(".submenu").eq(i).stop().slideDown();
+            $(".menu ul li a").removeClass("on");
+            $(".menu ul li").eq(i).find("a").addClass("on");
           }
-          status = !status;
         });
       });
     </script>
